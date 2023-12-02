@@ -26,6 +26,7 @@ def find_duplicate_files(folder):
             else:
                 file_hash_dict[file_hash] = file_path
 
+    
     return {key: value for key, value in duplicate_files.items() if len(value) > 1}
 
 def delete_duplicate_files(duplicate_files):
