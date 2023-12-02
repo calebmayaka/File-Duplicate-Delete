@@ -29,6 +29,7 @@ def find_duplicate_files(folder):
     
     return {key: value for key, value in duplicate_files.items() if len(value) > 1}
 
+
 def delete_duplicate_files(duplicate_files):
     """Delete duplicate files except for the first occurrence."""
     for files_list in duplicate_files.values():
